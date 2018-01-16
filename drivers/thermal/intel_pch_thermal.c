@@ -140,7 +140,7 @@ static int pch_wpt_init(struct pch_thermal_device *ptd, int *nr_trips)
 	}
 
 	writeb(tsel|WPT_TSEL_ETS, ptd->hw_base + WPT_TSEL);
-	if (!(WPT_TSEL_ETS & readb(ptd->hw_base + WPT_TEL))) {
+	if (!(WPT_TSEL_ETS & readb(ptd->hw_base + WPT_TSEL))) {
 		dev_err(&ptd->pdev->dev, "Sensor can't be enabled\n");
 		return -ENODEV;
 	}
