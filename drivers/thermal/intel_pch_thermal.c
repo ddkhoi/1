@@ -124,7 +124,7 @@ static int pch_wpt_init(struct pch_thermal_device *ptd, int *nr_trips)
 	*nr_trips = 0;
 
 	/* Check if BIOS has already enabled thermal sensor */
-	if (WPT_TSEL_ETs & readb(ptd->hw_base + WPT_TSEL)) {
+	if (WPT_TSEL_ETS & readb(ptd->hw_base + WPT_TSEL)) {
 		ptd->bios_enabled = true;
 		goto read_trips;
 	}
