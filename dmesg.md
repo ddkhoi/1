@@ -1,3 +1,5 @@
+// Output of laptop Dell 7447.
+
 [    0.000000] microcode: microcode updated early to revision 0x22, date = 2017-01-27
 [    0.000000] Linux version 4.9.0-5-amd64 (debian-kernel@lists.debian.org) (gcc version 6.3.0 20170516 (Debian 6.3.0-18) ) #1 SMP Debian 4.9.65-3+deb9u2 (2018-01-04)
 [    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-4.9.0-5-amd64 root=UUID=23e09ed1-79c4-4f7f-9091-eb45343533be ro quiet
